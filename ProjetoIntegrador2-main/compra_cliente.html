@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="compra_servicos_cliente">
+        <div class="servico_corte_cabelo">
+            <div class="cabecalho_servico_corte_cabelo">
+                <h1>Corte de Cabelo</h1>
+                <img src="imagens/compra_servicos_cli/corte.jpg">
+            </div>
+            <div class="corpo_servico_corte_cabelo">
+                <button id="diminuir" onclick="atualizarValores('qtdCabelo')">
+                    <span>-</span>
+                </button>
+                <span id="qtdCabelo">0</span>
+                <button id="aumentar" onclick="atualizarValores('qtdCabelo')">
+                    <span>+</span>
+                </button>
+            </div>       
+        </div>
+
+        <div class="servico_barba">
+            <div class="cabecalho_servico_barba">
+                <h1>Barba</h1>
+                <img src="imagens/compra_servicos_cli/barba.jpg">
+            </div>
+            <div class="corpo_servico_barba">
+                <button id="diminuir" onclick="atualizarValores('qtdBarba')">
+                    <span>-</span>
+                </button>
+                <span id="qtdBarba">0</span>
+                <button id="aumentar" onclick="atualizarValores('qtdBarba')">
+                    <span>+</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="servico_sobrancelha">
+            <div class="cabecalho_servico_sobrancelha">
+                <h1>Sobrancelha</h1>
+                <img src="imagens/compra_servicos_cli/sobrancelha.jfif">
+            </div>
+            <div class="corpo_servico_sobrancelha">
+                <button id="diminuir" onclick="atualizarValores('qtdSobrancelha')">
+                    <span>-</span>
+                </button>
+                <span id="qtdSobrancelha">0</span>
+                <button id="aumentar" onclick="atualizarValores('qtdSobrancelha')">
+                    <span>+</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="servico_pigmentacao">
+            <div class="cabecalho_servico_pigmentacao">
+                <h1>Pigmentação</h1>
+                <img src="imagens/compra_servicos_cli/pigmentacao.jfif">
+            </div>
+            <div class="corpo_servico_pigmentacao">
+                <button id="diminuir" onclick="atualizarValores('qtdPintura', 'subtrair')">
+                    <span>-</span>
+                </button>
+                <span id="qtdPintura">0</span>
+                <button id="aumentar" onclick="atualizarValores('qtdPintura', 'somar')">
+                    <span>+</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="servico_hidratacao">
+            <div class="cabecalho_servico_hidratacao">
+                <h1>Hidratação</h1>
+                <img src="imagens/compra_servicos_cli/hidratacao.jpg">
+            </div>
+            <div class="corpo_servico_hidratacao">
+                <button id="diminuir" onclick="atualizarValores('qtdHidratacao', 'subtrair')">
+                    <span>-</span>
+                </button>
+                <span id="qtdHidratacao">0</span>
+                <button id="aumentar" onclick="atualizarValores('qtdHidratacao', 'somar')">
+                    <span>+</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="servico_corte_infantil">
+            <div class="cabecalho_servico_corte_infantil">
+                <h1>Corte Infantil</h1>
+                <img src="imagens/compra_servicos_cli/corteinfantil.jpg">
+            </div>
+            <div class="corpo_servico_corte_infantil">
+                <button id="diminuir" onclick="atualizarValores('qtdInfantil')">
+                    <span>-</span>
+                </button>
+                <span id="qtdInfantil">0</span>
+                <button id="aumentar" onclick="atualizarValores('qtdInfantil')">
+                    <span>+</span>
+                </button>
+            </div>
+        </div>
+
+
+        <button class="botao_compra_servico" onclick="redirAcessoCliente()">Finalizar Compra</button>
+
+    </div>
+</body>
+
+</html>
